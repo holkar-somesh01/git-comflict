@@ -14,8 +14,7 @@ app.use(cookieParser())
 
 app.use("/api", require("./routes/todo.routes"))
 const demo = () => {
-    console.log("dddd");
-
+    console.log("dddd")
 }
 demo()
 app.use("/api/auth", require("./routes/auth.routes"))

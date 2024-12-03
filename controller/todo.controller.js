@@ -7,6 +7,10 @@ exports.AddTodo = expressAsyncHandler(async (req, res) => {
     await Todo.create({ task, desc })
     return res.json({ message: "TODO Create Suucess" })
 })
+const newFn = () => {
+    console.log("Todo New fn")
+}
+newFn()
 exports.GetTodo = expressAsyncHandler(async (req, res) => {
     const result = await Todo.find()
     return res.json({ message: "TODO Fetch Suucess", result })
