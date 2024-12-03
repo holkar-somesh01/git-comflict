@@ -13,6 +13,7 @@ app.use(express.json())
 app.use(cookieParser())
 
 app.use("/api", require("./routes/todo.routes"))
+app.use("/api", require(""))
 app.use("/api/auth", require("./routes/auth.routes"))
 // app.use("/api/auth", require("./routes/auth.routes"))
 app.use("*", (req, res) => {
